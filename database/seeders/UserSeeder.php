@@ -19,6 +19,19 @@ class UserSeeder extends Seeder
             'name' => 'heriyanbagong',
             'email' => 'heriyanbagong@gmail.com',
             'email_verified_at' => now(),
+            'role' => 'admin',
+            'phone' => '6282165074721',
+            'bio' => 'laravel dev',
+            'password' => Hash::make('123456'),
+        ]);
+
+        User::create([
+            'name' => 'Super Admin',
+            'email' => 'superadmin@gmail.com',
+            'email_verified_at' => now(),
+            'role' => 'superadmin',
+            'phone' => '6282165074721',
+            'bio' => 'laravel dev',
             'password' => Hash::make('123456'),
         ]);
     }
